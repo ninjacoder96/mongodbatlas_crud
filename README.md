@@ -87,7 +87,7 @@ N/A
 **Code:** 200 OK
 **Content:**
 ```json
-{
+[{
     "id": "664f4acbe1a1a124b928d0f5",
     "street": "test",
     "city": "Las Pinas",
@@ -98,7 +98,7 @@ N/A
     "street": "123 Main St",
     "city": "Springfield",
     "state": "IL"
-}
+}]
 ```
 
 
