@@ -79,7 +79,7 @@ Get All Addresses Collection document
 |----------------|----------|----------|-----------------------------|
 
 #### Request Body
-```json
+N/A
 
 ##### Success Response
 **Code:** 200 OK
