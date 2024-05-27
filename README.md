@@ -80,10 +80,10 @@ Get All Addresses Collection document
 | Parameter      | Type     | Required | Description                 |
 |----------------|----------|----------|-----------------------------|
 
-#### Request Body
+#### Sample Request Body
 N/A
 
-##### Success Response
+##### Sample Success Response
 **Code:** 200 OK
 **Content:**
 ```json
@@ -124,7 +124,7 @@ Add Address into the Collection
 | state          | string   | No       | Address Country             |
 | zipcode        | string   | No       | Address ZipCode             |
 
-#### Request Body
+#### Sample Request Body
 ```json
 {
            "street": "baka",
@@ -134,7 +134,7 @@ Add Address into the Collection
 }
 ```
 
-##### Success Response
+##### Sample Success Response
 **Code:** 200 OK
 **Content:**
 ```json
@@ -145,3 +145,199 @@ Add Address into the Collection
            "zipCode": "1683"
 }
 ```
+#### Update Address
+
+[PUT] [http://localhost:8080/api/address/{id}]
+
+#### Description
+Update Address into the Collection
+
+#### Request Headers
+| Header         | Value            | Description                 |
+|----------------|------------------|-----------------------------|
+| Content-Type   | application/json | Type of content being sent  |
+
+#### Request Parameters
+N/A
+
+#### Sample Request Body
+```json
+{
+           "street": "baka",
+           "city": "Makati",
+           "state": "Philippines",
+           "zipCode": "1683"
+}
+```
+##### Sample Success Response
+**Code:** 200 OK
+**Content:**
+```json
+{
+           "street": "baka",
+           "city": "Makati",
+           "state": "Philippines",
+           "zipCode": "1683"
+}
+```
+
+## User API
+
+#### Get All Users with Address
+
+[GET] [http://localhost:8080/api/users]
+
+#### Description
+Get all Users with Address in the collection
+
+#### Request Headers
+| Header         | Value            | Description                 |
+|----------------|------------------|-----------------------------|
+| Content-Type   | application/json | Type of content being sent  |
+
+#### Request Parameters
+N/A
+
+#### Sample Request Body
+N/A
+
+##### Sample Success Response
+**Code:** 200 OK
+**Content:**
+```json
+[
+  {
+    "id": "664f4acbe1a1a124b928d0f6",
+    "firstName": "Joshua",
+    "lastName": "De Guzman",
+    "age": 25,
+    "addresses": [
+      {
+        "id": "664f4e6f3fa0ea431721f15c",
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL"
+      }
+    ]
+  }
+]
+```
+
+#### Add User with Addresses
+
+[POST] [http://localhost:8080/api/user]
+
+#### Description
+Add User with  Address into the Collection
+
+#### Request Headers
+| Header         | Value            | Description                 |
+|----------------|------------------|-----------------------------|
+| Content-Type   | application/json | Type of content being sent  |
+
+#### Request Parameters
+| Parameter | Type          | Required | Description                                                |
+|-----------|---------------|----------|------------------------------------------------------------|
+| firstName | string        | No       | user first name                                            |
+| lastName  | string        | No       | user last name                                             |
+| age       | integer       | No       | user age                                                   |
+| addresses | List<Address> | No       | Address JSON Data, see address params for more information |
+
+
+#### Sample Request Body
+```json
+{
+    "firstName":"KJ",
+    "lastName": "Leb",
+    "age": 25,
+    "addresses": [
+        {
+            "street": "test",
+            "city": "Las Pinas",
+            "state": "Philippines"
+        }
+    ]
+}
+```
+
+#### Sample Request Response
+```json
+{
+    "id": "6654566520253a7ec54f0a09",
+    "firstName": "KJ",
+    "lastName": "Leb",
+    "age": 25,
+    "addresses": [
+        {
+            "id": "6654566520253a7ec54f0a08",
+            "street": "test",
+            "city": "Las Pinas",
+            "state": "Philippines"
+        }
+    ]
+}
+```
+
+#### Update User with Addresses
+
+[PUT] [http://localhost:8080/{id}]
+
+#### Description
+Add User with  Address into the Collection
+
+#### Request Headers
+| Header         | Value            | Description                 |
+|----------------|------------------|-----------------------------|
+| Content-Type   | application/json | Type of content being sent  |
+
+#### Request Parameters
+| Parameter | Type          | Required | Description                                                |
+|-----------|---------------|----------|------------------------------------------------------------|
+| firstName | string        | No       | user first name                                            |
+| lastName  | string        | No       | user last name                                             |
+| age       | integer       | No       | user age                                                   |
+| addresses | List<Address> | No       | Address JSON Data, see address params for more information |
+
+
+#### Sample Request Body
+```json
+{
+    "firstName":"KJ",
+    "lastName": "Leb",
+    "age": 25,
+    "addresses": [
+        {
+            "street": "test",
+            "city": "Las Pinas",
+            "state": "Philippines"
+        }
+    ]
+}
+```
+
+#### Sample Request Response
+```json
+{
+    "id": "6654566520253a7ec54f0a09",
+    "firstName": "KJ",
+    "lastName": "Leb",
+    "age": 25,
+    "addresses": [
+        {
+            "id": "6654566520253a7ec54f0a08",
+            "street": "test",
+            "city": "Las Pinas",
+            "state": "Philippines"
+        }
+    ]
+}
+```
+
+
+### Enhancements and Improvements 
+
+ Since this is a simple demo project, You can further extend and customize this app crud project if you want to learn more about spring boot, some enhancements and improvements that you can implement are:
+
+- Request Validation - for not nullable collection 
+- Proper Response logging for the success response (200 response code)
+- Multi-nested document collection - Create a schema where there's a nth level to appreciate the performance of the MongoDB
