@@ -48,3 +48,54 @@
 This section contains sample LDM for the MongoDB App
 
 ![NoSQL-database-design-example.png](NoSQL-database-design-example.png)
+
+In this simple ERD, the following rules are set:
+
+Relationship
+- User has basic information
+- User can have many addresses
+
+
+
+### Endpoints
+
+The following endpoints is set
+
+#### Address
+
+##### [GET] [http://localhost:8080/api/addresses]
+
+
+#### Description
+Get All Addresses Collection document
+
+#### Request Headers
+| Header         | Value            | Description                 |
+|----------------|------------------|-----------------------------|
+| Content-Type   | application/json | Type of content being sent  |
+
+#### Request Parameters
+| Parameter      | Type     | Required | Description                 |
+|----------------|----------|----------|-----------------------------|
+
+#### Request Body
+```json
+
+##### Success Response
+**Code:** 200 OK
+**Content:**
+```json
+[
+    {
+        "id": "664f4acbe1a1a124b928d0f5",
+        "street": "test",
+        "city": "Las Pinas",
+        "state": "Philippines"
+    },
+    {
+        "id": "664f4e6f3fa0ea431721f15c",
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL"
+    }
+]
