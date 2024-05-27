@@ -8,7 +8,7 @@
 
 ## Table of Contents
 - [Pre-requisite](#prerequisite)
-- [Installation](#installation)
+- [Setting Up MongoDB Atlas Account](#mongodbatlasAccount)
 
 
 ## Pre requisite 
@@ -21,7 +21,7 @@
 - (Optional) : [IntelliJ IDEA Conmmunity Edition](https://www.jetbrains.com/idea/)
 
 
-## Installation
+## Setting Up MongoDB Atlas Account
 
 - Before you even started running the application, we need to setup first the MongoDB Atlas account (it's free so don't worry :smile:)
 - After creating the account, click the cluster to see the connection option 
@@ -29,4 +29,5 @@
 - There will be a connection string generated if you have successfully created a cluster in MongoDB, it wil look something like this
   - ``mongodb+srv://joshua:<password>@cluster0.zpxjoyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0``
 - save the connection string for later.
+
 
