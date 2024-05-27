@@ -8,7 +8,7 @@
 
 ## Table of Contents
 - [Pre-requisite](#prerequisite)
-- [Setting Up MongoDB Atlas Account](#mongodbatlasAccount)
+- [Installation](#installation)
 
 
 ## Pre-requisite 
@@ -21,8 +21,9 @@
 - (Optional) : [IntelliJ IDEA Conmmunity Edition](https://www.jetbrains.com/idea/)
 
 
-## Setting Up MongoDB Atlas Account
+## Installation
 
+### Setup MongoDB Atlas Account
 - Before you even started running the application, we need to setup first the MongoDB Atlas account (it's free so don't worry :smile:)
 - After creating the account, click the cluster to see the connection option 
 - on the ``Set up connection security `` section, You'll find connect to your application section, click the ``drivers `` and choose ``java``
