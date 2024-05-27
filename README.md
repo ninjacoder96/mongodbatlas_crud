@@ -31,7 +31,12 @@
   - ``mongodb+srv://joshua:<password>@cluster0.zpxjoyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0``
 - save the connection string for later.
 
-### Install IntelliJ Idea (Recommended but Optional) <span style="color:green;" class="task-list-item-icon">✔</span>
-- If you want to run the Application quickly, it is recommended that you install IntelliJ Idea which can be found in the Pre-requisite section
+### Run the Application through IntelliJ Idea (Recommended but Optional) <span style="color:green;" class="task-list-item-icon">✔</span>
 
+<b>Note</b>: If you want to run the Application quickly, it is recommended that you install IntelliJ Idea which can be found in the Pre-requisite section
+
+- Clone the project
+- Open the project through IntelliJ
+- right click the `` :play: MongodbImmersionCrudApplication`` and Modify run configuration
+- 
 
