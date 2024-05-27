@@ -85,60 +85,21 @@ N/A
 
 ##### Success Response
 **Code:** 200 OK
-**Content:**
-```json
-[
-    {
-        "id": "664f4acbe1a1a124b928d0f5",
-        "street": "test",
-        "city": "Las Pinas",
-        "state": "Philippines"
-    },
-    {
-        "id": "664f4e6f3fa0ea431721f15c",
-        "street": "123 Main St",
-        "city": "Springfield",
-        "state": "IL"
-    }
-]
 
-
-#### Add Address
-
-##### [POST] [http://localhost:8080/api/address]
-
-
-#### Description
-Add Address into the Collection
-
-#### Request Headers
-| Header         | Value            | Description                 |
-|----------------|------------------|-----------------------------|
-| Content-Type   | application/json | Type of content being sent  |
-
-#### Request Parameters
-| Parameter      | Type     | Required | Description                 |
-|----------------|----------|----------|-----------------------------|
-| street         | string   | No       | Address Street              |
-| city           | string   | No       | Address City                |
-| state          | string   | No       | Address Country             |
-| zipcode        | string   | No       | Address ZipCode             |
-#### Request Body
-```json
-{
-           "street": "baka",
-           "city": "Makati",
-           "state": "Philippines",
-           "zipCode": "1683"
-}
-
-##### Success Response
-**Code:** 200 OK
 **Content:**
 ```json
 {
-           "street": "baka",
-           "city": "Makati",
-           "state": "Philippines",
-           "zipCode": "1683"
+    "id": "664f4acbe1a1a124b928d0f5",
+    "street": "test",
+    "city": "Las Pinas",
+    "state": "Philippines"
+},
+{
+    "id": "664f4e6f3fa0ea431721f15c",
+    "street": "123 Main St",
+    "city": "Springfield",
+    "state": "IL"
 }
+
+
+
