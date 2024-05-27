@@ -85,7 +85,6 @@ N/A
 
 ##### Success Response
 **Code:** 200 OK
-
 **Content:**
 ```json
 {
@@ -104,3 +103,45 @@ N/A
 
 
 
+#### Add Address
+
+[POST] [http://localhost:8080/api/address]
+
+
+#### Description
+Add Address into the Collection
+
+#### Request Headers
+| Header         | Value            | Description                 |
+|----------------|------------------|-----------------------------|
+| Content-Type   | application/json | Type of content being sent  |
+
+#### Request Parameters
+| Parameter      | Type     | Required | Description                 |
+|----------------|----------|----------|-----------------------------|
+| street         | string   | No       | Address Street              |
+| city           | string   | No       | Address City                |
+| state          | string   | No       | Address Country             |
+| zipcode        | string   | No       | Address ZipCode             |
+
+#### Request Body
+```json
+{
+           "street": "baka",
+           "city": "Makati",
+           "state": "Philippines",
+           "zipCode": "1683"
+}
+```
+
+##### Success Response
+**Code:** 200 OK
+**Content:**
+```json
+{
+           "street": "baka",
+           "city": "Makati",
+           "state": "Philippines",
+           "zipCode": "1683"
+}
+```
