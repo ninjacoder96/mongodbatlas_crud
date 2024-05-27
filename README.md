@@ -37,6 +37,7 @@
 
 - Clone the project
 - Open the project through IntelliJ
-- right click the `` :play: MongodbImmersionCrudApplication`` and Modify run configuration
-- 
+- right click the ``MongodbImmersionCrudApplication`` and Modify run configuration
+- under build and run configurations, you'll see that you don't have jdk yet (if you don't have java jdk on the machine), click and fine the correto-17jdk 
+- finally on the terminal run ``maven clean:install`` or just use the IDE to build and run the project
 
