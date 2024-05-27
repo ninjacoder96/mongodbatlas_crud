@@ -11,7 +11,7 @@
 - [Setting Up MongoDB Atlas Account](#mongodbatlasAccount)
 
 
-## Pre requisite 
+## Pre-requisite 
 
  In order to run the spring boot application, you'll need the following installed to your computer.
 
