@@ -341,3 +341,4 @@ Add User with  Address into the Collection
 - Request Validation - for not nullable collection 
 - Proper Response logging for the success response (200 response code)
 - Multi-nested document collection - Create a schema where there's a nth level to appreciate the performance of the MongoDB
+- Create a Full Text search on a multi-nested User document collection
