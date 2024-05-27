@@ -31,7 +31,7 @@
   - ``mongodb+srv://joshua:<password>@cluster0.zpxjoyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0``
 - save the connection string for later.
 
-### Install IntelliJ Idea (Recommended but Optional) :check: 
+### Install IntelliJ Idea (Recommended but Optional) [x] <span style="color:green">&#10004;</span>
 - If you want to run the Application quickly, it is recommended that you install IntelliJ Idea which can be found in the Pre-requisite section
 
 
