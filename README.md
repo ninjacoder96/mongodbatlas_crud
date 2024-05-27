@@ -41,3 +41,10 @@
 - under build and run configurations, you'll see that you don't have jdk yet (if you don't have java jdk on the machine), click and fine the correto-17jdk 
 - finally on the terminal run ``maven clean:install`` or just use the IDE to build and run the project
 
+
+
+### Logical Data Model
+
+This section contains sample LDM for the MongoDB App
+
+![NoSQL-database-design-example.png](NoSQL-database-design-example.png)
